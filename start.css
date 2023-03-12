@@ -1,0 +1,6 @@
+#greeting {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 150px;
+  transition: ease-in-out 0.6s;
+}

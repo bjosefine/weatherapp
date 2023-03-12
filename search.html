@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather | Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="search.css" />
+    <script src="index.js"></script>
+    <script src="search.js"></script>
+  </head>
+  <body>
+    <nav>
+      <i class="bi bi-list" id="navButton"></i>
+      <ul id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html">Search City</a></li>
+      </ul>
+    </nav>
+    <form method="get" action="search.html" id="searchFieldContainer">
+      <input
+        id="searchCity"
+        placeholder="write a city"
+        type="search"
+        name="city"
+      />
+      <button><i id="searchButton" class="bi bi-search"></i></button>
+    </form>
+    <div id="currentCityContainer">
+      <!-- nuvarande stad -->
+      <p id="currentCity" style="grid-area: city"></p>
+      <!-- väderikon -->
+      <p id="currentIcon" style="grid-area: icon"></p>
+      <!-- nuvarande temp -->
+      <p id="currentTemp" style="grid-area: temp"></p>
+      <!-- känns som -->
+      <p id="feelTempText" style="grid-area: feelText">Feels like:</p>
+      <p id="currentFeelTemp" style="grid-area: feelTemp"></p>
+      <!-- väder beskrivning -->
+      <p id="currentWeatherType" style="grid-area: type"></p>
+      <!-- sol upp & ner -->
+      <i
+        class="bi bi-sunrise"
+        id="currentSunriseIcon"
+        style="grid-area: sunriseIcon"
+      ></i>
+      <p id="currentSunrise" style="grid-area: sunrise"></p>
+      <i
+        class="bi bi-sunset"
+        id="currentSunsetIcon"
+        style="grid-area: sunsetIcon"
+      ></i>
+      <p id="currentSunset" style="grid-area: sunset"></p>
+      <!-- minsta & högsta temp -->
+      <p id="currentMinTemp" style="grid-area: minTemp"></p>
+      <p id="currentMaxTemp" style="grid-area: maxTemp"></p>
+      <p id="forecastHour" style="grid-area: hourF">Hourly Forecast</p>
+      <ul id="nextHourList" style="grid-area: list"></ul>
+    </div>
+  </body>
+</html>

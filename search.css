@@ -1,0 +1,55 @@
+/* innehållet som visas när man sökt stad */
+#currentCityContainer {
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "city city city"
+    "icon icon icon"
+    "type type type"
+    "sunriseIcon temp sunsetIcon"
+    "sunrise temp sunset"
+    "minTemp feelText maxTemp"
+    "minTemp feelTemp maxTemp"
+    "hourF hourF hourF"
+    "list list list";
+}
+#currentCity {
+  font-size: 2em;
+}
+#currentIcon {
+  font-size: 3em;
+}
+
+#currentSunriseIcon,
+#currentSunsetIcon {
+  font-size: 1.8em;
+}
+#currentTemp {
+  font-size: 2.7em;
+}
+#currentMinTemp,
+#currentMaxTemp,
+#feelTempText {
+  padding-top: 1em;
+}
+#forecastHour {
+  font-size: 1.5em;
+  margin-top: 45px;
+}
+#nextHourList {
+  background-color: rgba(204, 204, 204, 0.3);
+  width: 86%;
+  margin: auto;
+  margin-top: 2px;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+}
+#nextHourList p {
+  width: 70px;
+  font-size: 1.4em;
+  display: flex;
+  flex-direction: column;
+}

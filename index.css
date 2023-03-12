@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  color: #21282e;
+  background-color: #dee1e3;
+}
+body p,
+body,
+i {
+  font-size: 1.2em;
+  margin: 0;
+}
+/* Nav */
+nav {
+  background-color: #21282e;
+  color: #dee1e3;
+  opacity: 97%;
+  z-index: 100;
+  margin: 0;
+  top: 0;
+  padding: 0.5em;
+  position: fixed;
+  width: 100%;
+}
+#navButton {
+  opacity: 100%;
+  z-index: 99;
+  font-size: 2em;
+}
+#navList {
+  font-size: 1.3em;
+  list-style: none;
+  text-align: left;
+  display: block;
+  margin: 0;
+  padding: 1em;
+  display: none;
+}
+#navList a {
+  opacity: 100%;
+  text-decoration: none;
+  color: #dee1e3;
+}
+/* sök stad */
+#searchFieldContainer {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  margin-top: 90px;
+}
+#searchCity {
+  border: none;
+  width: 92%;
+  margin: 0;
+  padding: 0;
+  color: #dee1e3;
+  background-color: #21282e;
+  border-radius: 5px 0px 0px 5px;
+  font-size: 1.5em;
+}
+#searchCity:focus {
+  outline: none;
+}
+#searchFieldContainer button {
+  border-radius: 0px 5px 5px 0px;
+  display: inline-flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+#searchButton {
+  border-radius: 0px 5px 5px 0px;
+  height: fit-content;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #dee1e3;
+  background-color: #21282e;
+  font-size: 3em;
+}
